@@ -1,0 +1,28 @@
+{
+  "cards": [
+    {
+      "name": "Lightning Bolt",
+      "manaCost": "{R}",
+      "cmc": 1,
+      "colors": ["Red"],
+      "type": "Instant",
+      "text": "Lightning Bolt deals 3 damage to any target.",
+      "power": null,
+      "toughness": null,
+      "imageUrl": "https://api.scryfall.com/cards/12345678",
+      "setCode": "LEA"
+    },
+    {
+      "name": "Glorious Anthem",
+      "manaCost": "{1}{W}",
+      "cmc": 2,
+      "colors": ["White"],
+      "type": "Enchantment",
+      "text": "Creatures you control get +1/+1.",
+      "power": null,
+      "toughness": null,
+      "imageUrl": "https://api.scryfall.com/cards/87654321",
+      "setCode": "10E"
+    }
+  ]
+}

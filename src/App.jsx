@@ -4,6 +4,7 @@ import About from "./pages/About"
 import Card from "./pages/Card"
 import Info from "./pages/Info"
 import Navbar from "./components/Navbar"
+import NotFoundd from "./pages/NotFoundd"
 
 function App() {
 
@@ -14,8 +15,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/cards/:id" element={<Card />} />
             <Route path="/cards/:id/info" element={<Info />} />
+            <Route path="/cards/:id" element={<Card />} />
+            <Route path="*" element={<NotFoundd />} />
           </Routes>
         </BrowserRouter>
     </div>

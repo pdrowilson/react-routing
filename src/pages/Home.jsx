@@ -15,7 +15,7 @@ const Home = () => {
               <h2 className='font-medium'>{card.name}</h2>
               <p className='italic'>{card.text}</p>
               <hr className="my-4"/>
-              <Link className="text-blue-400 hover:underline"  to={`/cards/${card.id}`}>Show</Link>
+              <Link className="text-blue-400 hover:underline block"  to={`/cards/${card.id}`}>Show</Link>
             </div>
           </div>
         ))

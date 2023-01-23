@@ -1,11 +1,23 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <nav className='flex bg-blue-600 flex justify-center flex-wrap'>
-     <Link className='p-5 text-blue-50 hover:text-blue-400 hover:bg-blue-100' to="/">Home</Link> 
-     <Link className='p-5 text-blue-50 hover:text-blue-400 hover:bg-blue-100' to="/about">About</Link> 
+     <NavLink 
+        className={({isActive}) => (
+          `${isActive ? 'bg-blue-100 text-blue-400' : 'text-blue-50'} p-5 text-blue-50 hover:text-blue-50 hover:bg-blue-500`
+        )} 
+        to="/">
+        Home
+      </NavLink>
+     <NavLink 
+        className={({isActive}) => (
+          `${isActive ? 'bg-blue-100 text-blue-400' : 'text-blue-50'} p-5 text-blue-50 hover:text-blue-50 hover:bg-blue-500`
+        )} 
+        to="/about">
+        About
+      </NavLink>
     </nav>
   )
 }

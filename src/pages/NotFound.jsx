@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const NotFoundd = () => {
+const NotFound = () => {
   return (
     <div className='flex justify-center flex-wrap mt-7'>
       <div>
@@ -13,4 +13,4 @@ const NotFoundd = () => {
   )
 }
 
-export default NotFoundd
+export default NotFound

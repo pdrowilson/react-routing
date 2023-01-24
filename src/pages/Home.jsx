@@ -5,7 +5,7 @@ import { useFetch } from '../hooks/useFetch'
 const Home = () => {
 
   const url = "http://localhost:3000/cards"
-  const {data, handleHttpResquest, loading, errMessage, closeErrMessage} = useFetch(url)
+  const {data} = useFetch(url)
   return (
     <div className='flex justify-center flex-wrap mt-7'>
       {data && 
